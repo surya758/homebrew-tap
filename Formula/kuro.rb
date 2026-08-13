@@ -14,7 +14,7 @@ class Kuro < Formula
   homepage "https://github.com/surya758/kuro"
   url "https://github.com/surya758/kuro.git",
       tag:      "v0.1.0",
-      revision: "0e30de824b217ed5ea7f38eb3e21db3d9fb2cf73"
+      revision: "0a0a30b45ec8241e1b05142bc034780ee4bb7322"
   license "MIT"
   head "https://github.com/surya758/kuro.git", branch: "main"
 
