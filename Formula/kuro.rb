@@ -13,13 +13,16 @@ class Kuro < Formula
   desc "Terminal anime streaming client that plays in IINA"
   homepage "https://github.com/surya758/kuro"
   url "https://github.com/surya758/kuro.git",
-      tag:      "v0.5.1",
-      revision: "c41553c39ad4885eb94175fd89f468e8197c6bbe"
+      tag:      "v0.6.0",
+      revision: "0633d8f4cb5588ae90375e92d7324090fe5715f3"
   license "MIT"
   head "https://github.com/surya758/kuro.git", branch: "main"
 
   depends_on "rust" => :build
   depends_on :macos
+  # Sources that publish no muxed rendition are resolved by the player itself,
+  # which IINA cannot do. kuro uses mpv for those and IINA for everything else.
+  depends_on "mpv"
   # The anidb provider sits behind a challenge that inspects the TLS handshake, so
   # no ordinary client reaches it. Depending on this is what saves users a manual
   # binary install; kuro still runs without it, minus that one provider.
