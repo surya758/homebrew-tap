@@ -20,6 +20,10 @@ class Kuro < Formula
 
   depends_on "rust" => :build
   depends_on :macos
+  # The anidb provider sits behind a challenge that inspects the TLS handshake, so
+  # no ordinary client reaches it. Depending on this is what saves users a manual
+  # binary install; kuro still runs without it, minus that one provider.
+  depends_on "surya758/tap/curl-impersonate"
   depends_on "yt-dlp"
 
   def install
