@@ -13,8 +13,8 @@ class Kuro < Formula
   desc "Terminal anime streaming client that plays in IINA"
   homepage "https://github.com/surya758/kuro"
   url "https://github.com/surya758/kuro.git",
-      tag:      "v0.6.7",
-      revision: "a1eef03880e2fd61e1f9ee41a3a5954e63e3c843"
+      tag:      "v0.6.8",
+      revision: "4ce0c8bc01fb9902f64c3accb0ce7f0d2832eaf4"
   license "MIT"
   head "https://github.com/surya758/kuro.git", branch: "main"
 
